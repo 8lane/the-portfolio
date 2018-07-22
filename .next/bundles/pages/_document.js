@@ -1738,7 +1738,7 @@ function (_Document) {
         }
       }, "Tom Christian \u2013 Freelance Javascript & React Developer from London, UK"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "description",
-        content: "Contract Javascript Developer focusing on Universal React applications in an acccessible, test driven and user centric approach.",
+        content: "Contract Javascript Developer focusing on Universal React applications in an accessible, test driven and user centric approach.",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
@@ -1773,7 +1773,7 @@ function (_Document) {
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         property: "og:description",
-        content: "Contract Javascript Developer focusing on Universal React applications in an acccessible, test driven and user centric approach.",
+        content: "Contract Javascript Developer focusing on Universal React applications in an accessible, test driven and user centric approach.",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
@@ -1801,7 +1801,7 @@ function (_Document) {
         }
       }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
         name: "twitter:description",
-        content: "Contract Javascript Developer focusing on Universal React applications in an acccessible, test driven and user centric approach.",
+        content: "Contract Javascript Developer focusing on Universal React applications in an accessible, test driven and user centric approach.",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25

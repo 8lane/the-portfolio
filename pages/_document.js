@@ -11,18 +11,18 @@ export default class MyDocument extends Document {
 
           <title>Tom Christian &ndash; Freelance Javascript &amp; React Developer from London, UK</title>
           
-          <meta name="description" content="Contract Javascript Developer focusing on Universal React applications in an acccessible, test driven and user centric approach."/>
+          <meta name="description" content="Contract Javascript Developer focusing on Universal React applications in an accessible, test driven and user centric approach."/>
           <meta name="robots" content="noindex,follow" />
 
           <meta property="og:locale" content="en_GB" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Tom Christian – Freelance Javascript &amp; React Developer from London, UK" />
-          <meta property="og:description" content="Contract Javascript Developer focusing on Universal React applications in an acccessible, test driven and user centric approach." />
+          <meta property="og:description" content="Contract Javascript Developer focusing on Universal React applications in an accessible, test driven and user centric approach." />
           <meta property="og:url" content="http://tomchristian.co.uk/" />
           <meta property="og:site_name" content="Tom Christian" />
 
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:description" content="Contract Javascript Developer focusing on Universal React applications in an acccessible, test driven and user centric approach." />
+          <meta name="twitter:description" content="Contract Javascript Developer focusing on Universal React applications in an accessible, test driven and user centric approach." />
           <meta name="twitter:title" content="Tom Christian – Freelance Javascript &amp; React Developer from London, UK" />
           <meta name="twitter:site" content="@tomchristian91" />
           <meta name="twitter:creator" content="@tomchristian91" />
