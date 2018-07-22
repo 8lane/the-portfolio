@@ -1,0 +1,11 @@
+.projects {
+  padding-top: $spacer;
+
+  @include media-breakpoint-up(sm) {
+    padding-top: $spacer * 3;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: $spacer * 5;
+  }
+}

@@ -1,0 +1,51 @@
+$logos: (
+  html5: '/static/logos/logo-html5.svg',
+  adobe: '/static/logos/logo-adobe.svg',
+  react: '/static/logos/logo-react.svg',
+  react-dark: '/static/logos/logo-react-dark.svg',
+  ai: '/static/logos/logo-ai.svg',
+  angular: '/static/logos/logo-angular.svg',
+  javascript: '/static/logos/logo-es6.svg',
+  es6: '/static/logos/logo-es6.svg',
+  invision: '/static/logos/logo-invision.svg',
+  node: '/static/logos/logo-node.svg',
+  sass: '/static/logos/logo-sass.svg',
+  typescript: '/static/logos/logo-typescript.svg',
+  tdd: '/static/logos/logo-jasmine.svg',
+  jasmine: '/static/logos/logo-jasmine.svg',
+  canvas: '/static/logos/logo-html5.svg',
+  photoshop: '/static/logos/logo-adobe.svg',
+  php: '/static/logos/logo-php.svg',
+  webpack: '/static/logos/logo-webpack.svg',
+  episerver: '/static/logos/logo-episerver.svg',
+  jquery: '/static/logos/logo-jquery.svg',
+  backbase: '/static/logos/logo-backbase.svg',
+  backbone: '/static/logos/logo-backbone.svg',
+  redux: '/static/logos/logo-redux.svg',
+  mobx: '/static/logos/logo-mobx.svg',
+  jest: '/static/logos/logo-jest.svg',
+  algolia: '/static/logos/logo-algolia.svg',
+);
+
+.tag {
+  position: relative;
+  padding-left: 2.3rem;
+
+  &:not(:last-child) {
+    margin-bottom: $spacer / 2;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 24px;
+  }
+
+  @each $name, $logo in $logos {
+    &--#{$name}:before { background: url($logo) no-repeat center/contain; }
+  }
+}

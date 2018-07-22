@@ -1,0 +1,53 @@
+.main-ctas {
+  margin-top: $spacer * 1.5;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    margin-top: $spacer;
+    display: inline-block;
+  }
+
+  &__sep {
+    display: inline-block;
+    color: rgba(255,255,255, 0.3);
+    font-size: .8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 100;
+    transition: all .15s ease-in;
+
+    &--folio {
+      margin-bottom: $spacer;
+    }
+
+    @include media-breakpoint-up(sm) {
+      display: inline-block;
+      width: auto;
+      margin-bottom: 0;
+
+      &--folio {
+        margin-right: $spacer / 2;
+      }
+
+      &--cv {
+        margin-left: $spacer / 2;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      &--folio {
+        margin-right: $spacer;
+      }
+
+      &--cv {
+        margin-left: $spacer;
+      }
+    }
+  }
+}

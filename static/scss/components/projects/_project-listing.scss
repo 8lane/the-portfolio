@@ -1,0 +1,144 @@
+.project-listing {
+  margin-bottom: $spacer;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: $spacer * 4;
+  }
+
+  &__body {
+    background: $white;
+  }
+
+  &__close-btn {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    top: 0.5rem;
+    right: 2.5rem;
+    font-size: 3.5rem;
+    height: 60px;
+    width: 60px;
+    padding: 0;
+    color: $brand-dark;
+    transition: 120ms ease-in;
+    transition-delay: 100ms;
+
+    .project-listing__preview:hover & {
+      animation: pulse 300ms ease-in forwards;
+    }
+
+    .project-listing--toggled & {
+      opacity: 1;
+    }
+  }
+
+  &__close-btn-icon {
+    font-style: normal;
+    display: block;
+    vertical-align: middle;
+    line-height: 60px;
+  }
+
+  &__preview {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &__preview-meta {
+    flex-grow: 1;
+    padding: $spacer;
+
+    @include media-breakpoint-up(sm) {
+      padding: $spacer * 2;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-top: $spacer * 3;
+      padding-right: $spacer * 3;
+      padding-bottom: $spacer * 3;
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding-top: $spacer * 5;
+      padding-right: $spacer * 5;
+      padding-bottom: $spacer * 5;
+    }
+  }
+
+  &__preview-title {
+    color: $brand-dark;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__preview-excerpt {
+    margin-bottom: 0;
+    color: rgba($brand-dark, 0.7);
+    font-size: 88%;
+    transform: translate3d(0, 0, 0);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__detailed {
+    transition: 200ms ease-in;
+
+    &:not(&--toggled) {
+      overflow: hidden;
+    }
+
+    &--loaded:not(&--toggled) {
+      max-height: 0 !important;
+    }
+  }
+
+  &__excerpt-full {
+    margin-bottom: 0;
+    padding: $spacer;
+    opacity: 0;
+    animation: fadeOut 200ms ease-in forwards;
+    animation-delay: 0;
+
+    .project-listing__detailed--toggled & {
+      animation: fadeSlideIn 300ms ease-in forwards;
+      animation-delay: 500ms;
+    }
+
+    @include media-breakpoint-up(sm) {
+      padding: $spacer * 2;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-left: $spacer * 5;
+      padding-right: $spacer * 5;
+      padding-bottom: $spacer * 3;
+    }
+  }
+
+  &__date {
+    margin-top: $spacer * 4;
+    margin-bottom: $spacer * 2;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    color: $brand-dark;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2.2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: $spacer * 7;
+      margin-bottom: $spacer * 3;
+      font-size: 2.8rem;
+    }
+  }
+}
