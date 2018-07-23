@@ -36,7 +36,7 @@ export default () =>
 
 			<div className="footer__credits">
 				<span className="footer__link footer__link--credit">
-					<a className="footer__link footer__link--copyright" href="<?php echo get_home_url(); ?>">&copy; Tom Christian</a> &ndash; <a className="footer__link footer__link--github" href="https://github.com/tctc91/portfolio-v6">Created with Now, Next &amp; Contentful</a>
+					<a className="footer__link footer__link--copyright" href="https://tomchristian.co.uk/">&copy; Tom Christian</a> &ndash; <a className="footer__link footer__link--github" href="https://github.com/tctc91/the-portfolio">Created with Now, Next &amp; Contentful</a>
 				</span>
 				<span className="footer__link footer__link--credit footer__link--video">Footage from <a href="https://www.youtube.com/channel/UC0BcBb8gTlHW6_EtRqwKY7g" target="_blank" rel="external">The Soan Age &rarr;</a></span>
 			</div>

@@ -18,7 +18,7 @@ export default class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Tom Christian – Freelance Javascript &amp; React Developer from London, UK" />
           <meta property="og:description" content="Contract Javascript Developer focusing on Universal React applications in an accessible, test driven and user centric approach." />
-          <meta property="og:url" content="http://tomchristian.co.uk/" />
+          <meta property="og:url" content="https://tomchristian.co.uk/" />
           <meta property="og:site_name" content="Tom Christian" />
 
           <meta name="twitter:card" content="summary" />
