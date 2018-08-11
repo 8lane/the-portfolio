@@ -4,9 +4,9 @@
   "description": "Tom's Portfolio v7 (NextJS PWA)",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "deploy": "now"
   },
   "author": "Tom Christian",
@@ -25,5 +25,8 @@
     "react-dom": "^16.4.1",
     "scrollreveal": "^3.4.0",
     "smooth-scroll": "^14.2.1"
+  },
+  "devDependencies": {
+    "express": "^4.16.3"
   }
 }
