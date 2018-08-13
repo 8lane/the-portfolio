@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
           <title>Tom Christian &ndash; Freelance Javascript &amp; React Developer from London, UK</title>
           
           <meta name="description" content="Contract Javascript Developer focusing on Universal React applications in an accessible, test driven and user centric approach."/>
-          <meta name="robots" content="noindex,follow" />
+          <meta name="robots" content="index, follow">
 
           <meta property="og:locale" content="en_GB" />
           <meta property="og:type" content="website" />
