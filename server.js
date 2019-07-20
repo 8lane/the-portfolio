@@ -27,13 +27,17 @@ app.prepare().then(() => {
     }
   };
   
-  server.get('/sitemap.xml', (req, res) => (
+  server.get('/sitemap.xml', (req, res) => {
     res.status(200).sendFile('sitemap.xml', sitemapOptions)
-  ));
+  });
 
   server.use(express.static('/static'));
 
   server.use('/robots.txt', express.static('/static/robots.txt'));
+  
+  server.get('/amy', (req, res) => {
+    res.redirect('https://holidays-comxhrffbm.now.sh/')
+  });
 
   server.use(handler).listen(3000, err => {
     if (err) throw err
